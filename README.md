@@ -1,6 +1,6 @@
 ###Git shortcut to automate the commit and push commands
 
-Sometimes execute the basic git commands is very boring and repetitive so, this shortcut is awesome. It will run these commands in this order:
+Sometimes executing basic git commands is much boring and repetitive so, this shortcut will help you a lot. It will run these commands in this sequence:
 
 - `git status`
 - `git commit -am"YOUR_MESSAGE_COMMIT"`
