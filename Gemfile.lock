@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    git-pc (0.0.1)
+    git-pc (0.1.1)
       colored (~> 1.2)
       grit (= 2.5.0)
 
@@ -24,4 +24,4 @@ DEPENDENCIES
   git-pc!
 
 BUNDLED WITH
-   1.10.5
+   1.12.1

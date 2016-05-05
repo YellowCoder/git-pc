@@ -2,4 +2,4 @@
 
 require 'git-pc'
 
-GitPc.new.run(ARGV)
+GitPc.new(ARGV)
