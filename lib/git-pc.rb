@@ -23,6 +23,20 @@ class GitPc
     %x(git status)
   end
 
+  def add_command
+    puts "Executing add command".green
+    puts "git add .".yellow
+    puts
+    %x(git add .)
+  end
+
+  def commit_command
+    puts "Executing commit command".green
+    puts "git commit -S -am #{ message }".yellow
+    puts
+    %x(git commit -S -am "#{ message }")
+  end
+
   def push_command
     puts "Executing push command".green
     puts "git push origin #{ current_branch }".yellow
@@ -30,19 +44,6 @@ class GitPc
     %x(git push origin #{ current_branch })
   end
 
-  def commit_command
-    puts "Executing commit command".green
-    puts "git commit -m #{ message }".yellow
-    puts
-    %x(git commit -m "#{ message }")
-  end
-
-  def add_command
-    puts "Executing add command".green
-    puts "git add .".yellow
-    puts
-    %x(git add .)
-  end
 
   def current_branch
     @current_branch ||= repo.head.name
